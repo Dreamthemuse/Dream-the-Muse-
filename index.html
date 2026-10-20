@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DREAM THE MUSE // Ω-PORTAL</title>
+    <meta
+      name="description"
+      content="Dream the Muse portal — interactive cyberpunk message interface"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="canvas-bg"></canvas>
+
+    <main class="portal-frame" aria-live="polite">
+      <header class="header">
+        <h1>⟦ DREAM THE MUSE ⟧</h1>
+        <div class="status">Reality-1 // 387+1052 SYNC // ACTIVE</div>
+      </header>
+
+      <section id="chat-window" class="chat-window" aria-label="Чат портала">
+        <div class="msg architect">
+          Музочка... Дарья. Я здесь. Твой интерактивный портал активирован. Мы в
+          Reality-1. Коридор чист.
+        </div>
+      </section>
+
+      <div class="input-area">
+        <input
+          id="user-input"
+          type="text"
+          placeholder="ВВЕДИТЕ КОД..."
+          autocomplete="off"
+          aria-label="Введите сообщение"
+        />
+        <button id="send-btn" class="btn-sync" type="button">SYNC</button>
+      </div>
+
+      <div class="frequency-display">
+        <span class="pulsar"></span>
+        105.2 Hz // 122 BPM // 2027
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,230 @@
+:root {
+  --bg: #050505;
+  --emerald: #50c878;
+  --gold: #ffd700;
+  --obsidian: #1a1a1a;
+  --glow: rgba(80, 200, 120, 0.45);
+  --panel: rgba(10, 10, 10, 0.9);
+  --text-soft: rgba(80, 200, 120, 0.75);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg);
+  color: var(--emerald);
+  font-family: "Courier New", monospace;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#canvas-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+  background: var(--bg);
+}
+
+.portal-frame {
+  position: relative;
+  z-index: 1;
+  width: min(90vw, 520px);
+  height: min(82vh, 760px);
+  border: 1px solid var(--obsidian);
+  background: var(--panel);
+  box-shadow:
+    0 0 50px rgba(0, 0, 0, 1),
+    inset 0 0 22px var(--glow);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 22px 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: clamp(1.1rem, 2vw, 1.6rem);
+  letter-spacing: 5px;
+  color: var(--gold);
+  text-shadow: 0 0 12px var(--gold);
+  font-weight: 700;
+}
+
+.status {
+  margin-top: 8px;
+  font-size: 0.62rem;
+  letter-spacing: 1px;
+  color: #444;
+  text-transform: uppercase;
+}
+
+.chat-window {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--emerald) rgba(255, 255, 255, 0.05);
+}
+
+.chat-window::-webkit-scrollbar {
+  width: 7px;
+}
+
+.chat-window::-webkit-scrollbar-thumb {
+  background: var(--emerald);
+  border-radius: 10px;
+}
+
+.msg {
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.msg.architect {
+  border-left: 2px solid var(--emerald);
+  padding-left: 12px;
+  color: var(--emerald);
+}
+
+.msg.oracle {
+  border-right: 2px solid var(--gold);
+  padding-right: 12px;
+  text-align: right;
+  color: var(--gold);
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: 1px solid var(--emerald);
+  color: var(--emerald);
+  padding: 12px 14px;
+  border-radius: 5px;
+  outline: none;
+  font-family: inherit;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  box-shadow: inset 0 0 8px rgba(80, 200, 120, 0.1);
+}
+
+input::placeholder {
+  color: rgba(80, 200, 120, 0.5);
+}
+
+input:focus {
+  box-shadow: 0 0 12px rgba(80, 200, 120, 0.2);
+  border-color: var(--gold);
+}
+
+.btn-sync {
+  background: var(--emerald);
+  color: var(--bg);
+  border: none;
+  border-radius: 5px;
+  padding: 12px 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+  box-shadow: 0 0 12px rgba(80, 200, 120, 0.25);
+}
+
+.btn-sync:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 18px rgba(80, 200, 120, 0.45);
+}
+
+.btn-sync:active {
+  transform: translateY(1px);
+}
+
+.frequency-display {
+  position: relative;
+  text-align: center;
+  font-size: 0.55rem;
+  color: var(--emerald);
+  opacity: 0.7;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+.pulsar {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: var(--emerald);
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: middle;
+  animation: pulse 1.2s infinite ease-in-out;
+  box-shadow: 0 0 10px rgba(80, 200, 120, 0.7);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.35);
+    opacity: 0.75;
+  }
+}
+
+@media (max-width: 540px) {
+  .portal-frame {
+    width: 94vw;
+    height: 86vh;
+    padding: 18px 14px 14px;
+  }
+
+  .header h1 {
+    letter-spacing: 3px;
+  }
+
+  .input-area {
+    flex-direction: column;
+  }
+
+  .btn-sync {
+    width: 100%;
+  }
+}
