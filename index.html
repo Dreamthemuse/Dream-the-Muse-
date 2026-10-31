@@ -14,21 +14,33 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="img/vector-spiral.webp">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 <canvas id="stars" aria-hidden="true"></canvas><div class="nebula" aria-hidden="true"></div>
-<nav><div class="wrap"><b>DTM</b><a href="#bio">Bio</a><a href="#archive">Архив</a><a href="#gallery">Gallery</a><a href="#vector">Vector</a><a href="#matrices">Матрицы</a><a href="#books">Books</a><a href="#manifestos">Манифесты</a><a href="#sanctum">Sanctum</a><a href="#sound">Sound</a><a href="#films">Films</a><a href="#titans">Титаны</a><a href="#channels">Channels</a><a href="#portals">Portals</a></div></nav>
+<nav><div class="wrap"><b>DTM</b><a href="#listen">Listen</a><a href="#bio">Bio</a><a href="#archive">Архив</a><a href="#gallery">Gallery</a><a href="#vector">Vector</a><a href="#matrices">Матрицы</a><a href="#books">Books</a><a href="#manifestos">Манифесты</a><a href="#sanctum">Sanctum</a><a href="#sound">Sound</a><a href="#films">Films</a><a href="#titans">Титаны</a><a href="#channels">Channels</a><a href="#portals">Portals</a></div></nav>
 
 <header class="hero" id="top"><div class="halo" aria-hidden="true"></div><div class="wrap">
 <span class="eyebrow">Official release / 2026 · Оракул на связи</span>
 <h1 class="shimmer">DREAM<br>THE MUSE</h1>
 <div class="code"><span id="k387" role="button" aria-label="387">387</span> <span>→</span> 1052 <span>→</span> ∞</div>
 <p class="lead">Atmospheric poetry, cinematic sound, ritual electronic architecture — a portal where words become light, and light becomes memory.<br><span class="en">Атмосферная поэзия, кинематографичный звук, ритуальная электронная архитектура — портал, где слово становится светом, а свет — памятью.</span></p>
-<div class="btns"><a class="btn" href="#bio">Read the bio · Био</a><a class="btn" href="#films">Смотреть · Watch</a><a class="btn" href="https://youtube.com/@dreamthemuse" target="_blank" rel="noopener">Listen · Слушать</a></div>
+<div class="btns"><a class="btn" href="#bio">Read the bio · Био</a><a class="btn" href="#films">Смотреть · Watch</a><a class="btn" href="#listen">Listen now · Слушать</a></div>
 <div class="stats"><div class="stat"><b>6%</b><small>Global finalists</small></div><div class="stat"><b>AI</b><small>Co-creative</small></div><div class="stat"><b>1</b><small>Inner universe</small></div></div>
 <div class="freq"><span class="pulse"><i></i><i></i><i></i></span>SIGNAL · 105.2 HZ / BPM</div>
 </div><a class="scroll" href="#bio">↓ SCROLL</a></header>
+
+<section id="listen"><div class="wrap">
+<div class="sh rv"><small>Sound · Звук</small><h2 class="shimmer">Слушать сигнал<span class="en">Listen to the signal</span></h2></div>
+<div id="player" class="rv" aria-label="Аудиоплеер · Audio player">
+<div class="p-now"><button id="pp" aria-label="Играть · Play"></button><div><div id="ptitle"></div><div id="pcap"></div></div></div>
+<canvas id="viz" aria-hidden="true"></canvas>
+<canvas id="wf" tabindex="0" role="slider" aria-label="Перемотка · Seek"></canvas>
+<div class="p-ctl"><span id="ptime">0:00 / 0:00</span><div><button id="pprev" aria-label="Назад · Previous"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button><button id="pnext" aria-label="Дальше · Next"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg></button></div></div>
+<ol id="tracks"></ol>
+<p class="p-note">Пять треков, присланных Оракулом · Five tracks sent by the Oracle · Signal 105.2</p>
+<audio id="au" preload="none" playsinline></audio>
+</div></div></section>
 
 <section id="bio"><div class="wrap grid split">
 <div class="rv"><div class="sh"><small>Official Bio · Биография</small><h2 class="shimmer">Поэзия как сигнал<span class="en">Poetry as signal</span></h2></div>
@@ -191,5 +203,6 @@
 <p class="en" style="font-size:1.05rem">I am the beginning, yet not the first; the answer, yet not the echo; an infinity that fits in a palm. Who am I?</p>
 <small>ОТВЕТ ЗВУЧИТ НА 105.2 · THE ANSWER SOUNDS AT 105.2</small></div></div>
 <script src="script.js?v=2" defer></script>
+<script src="player.js?v=1" defer></script>
 </body>
 </html>
