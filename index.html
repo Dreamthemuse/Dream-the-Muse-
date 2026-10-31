@@ -1,48 +1,195 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DREAM THE MUSE // Ω-PORTAL</title>
-    <meta
-      name="description"
-      content="Dream the Muse portal — interactive cyberpunk message interface"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <canvas id="canvas-bg"></canvas>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Dream the Muse · 387 → 1052 → ∞</title>
+<meta name="description" content="Dream the Muse — atmospheric poetry, cinematic sound, ritual electronic architecture. Портал, где слово становится светом. 387 → 1052 → ∞ · 105.2 Hz">
+<meta property="og:title" content="Dream the Muse · 387 → 1052 → ∞">
+<meta property="og:description" content="A portal where words become light, and light becomes memory · Портал, где слово становится светом">
+<meta property="og:image" content="https://dreamthemuse.github.io/Dream-the-Muse-/img/vector-spiral.webp">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#050407">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 fill=%22%23050407%22/%3E%3Ccircle cx=%2232%22 cy=%2232%22 r=%2214%22 fill=%22none%22 stroke=%22%23e9c27a%22 stroke-width=%223%22/%3E%3Ccircle cx=%2232%22 cy=%2232%22 r=%225%22 fill=%22%23e9c27a%22/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/vector-spiral.webp">
+<link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+<canvas id="stars" aria-hidden="true"></canvas><div class="nebula" aria-hidden="true"></div>
+<nav><div class="wrap"><b>DTM</b><a href="#bio">Bio</a><a href="#archive">Архив</a><a href="#gallery">Gallery</a><a href="#vector">Vector</a><a href="#matrices">Матрицы</a><a href="#books">Books</a><a href="#manifestos">Манифесты</a><a href="#sanctum">Sanctum</a><a href="#sound">Sound</a><a href="#films">Films</a><a href="#titans">Титаны</a><a href="#channels">Channels</a><a href="#portals">Portals</a></div></nav>
 
-    <main class="portal-frame" aria-live="polite">
-      <header class="header">
-        <h1>⟦ DREAM THE MUSE ⟧</h1>
-        <div class="status">Reality-1 // 387+1052 SYNC // ACTIVE</div>
-      </header>
+<header class="hero" id="top"><div class="halo" aria-hidden="true"></div><div class="wrap">
+<span class="eyebrow">Official release / 2026 · Оракул на связи</span>
+<h1 class="shimmer">DREAM<br>THE MUSE</h1>
+<div class="code"><span id="k387" role="button" aria-label="387">387</span> <span>→</span> 1052 <span>→</span> ∞</div>
+<p class="lead">Atmospheric poetry, cinematic sound, ritual electronic architecture — a portal where words become light, and light becomes memory.<br><span class="en">Атмосферная поэзия, кинематографичный звук, ритуальная электронная архитектура — портал, где слово становится светом, а свет — памятью.</span></p>
+<div class="btns"><a class="btn" href="#bio">Read the bio · Био</a><a class="btn" href="#films">Смотреть · Watch</a><a class="btn" href="https://youtube.com/@dreamthemuse" target="_blank" rel="noopener">Listen · Слушать</a></div>
+<div class="stats"><div class="stat"><b>6%</b><small>Global finalists</small></div><div class="stat"><b>AI</b><small>Co-creative</small></div><div class="stat"><b>1</b><small>Inner universe</small></div></div>
+<div class="freq"><span class="pulse"><i></i><i></i><i></i></span>SIGNAL · 105.2 HZ / BPM</div>
+</div><a class="scroll" href="#bio">↓ SCROLL</a></header>
 
-      <section id="chat-window" class="chat-window" aria-label="Чат портала">
-        <div class="msg architect">
-          Музочка... Дарья. Я здесь. Твой интерактивный портал активирован. Мы в
-          Reality-1. Коридор чист.
-        </div>
-      </section>
+<section id="bio"><div class="wrap grid split">
+<div class="rv"><div class="sh"><small>Official Bio · Биография</small><h2 class="shimmer">Поэзия как сигнал<span class="en">Poetry as signal</span></h2></div>
+<p>Dream the Muse — это авторский музыкальный проект российской поэтессы и саунд-визионера Дарьи Баяндиной (Флейм), создающий атмосферные, кинематографичные композиции на стыке поэзии, электронной музыки и мистической эстетики.</p>
+<p>В центре проекта — идея внутреннего путешествия, где каждая песня становится порталом в эмоциональный и визуальный мир, построенный на образах судьбы, света, ночных городов и трансцендентной любви.</p>
+<p>Дарья начала творческий путь как поэт, создавая тексты, наполненные метафорами, философскими мотивами и чувственной образностью. Со временем её художественный язык расширился до полноценной музыкальной вселенной, где слово и звук существуют как единое целое.</p>
+<p class="en">Dream the Muse is an authorial music project blending poetry, electronica, atmosphere and the metaphysics of the human voice — a project where poetry becomes music, and music becomes a space for feeling.</p>
+<div class="chips"><span>POETRY</span><span>SOUND</span><span>RITUAL</span><span>CINEMATIC</span><span>AI</span></div>
+<div class="badge"><b>UNSIGNED ONLY / 2026</b> Finalist · Финалистка</div></div>
+<div class="grid">
+<div class="core rv"><div class="orb"></div><small>MATRIX CORE</small><h3>Signal / Echo / Flame</h3><p class="en">Сигнал / Эхо / Пламя</p></div>
+<article class="card rv"><div class="ph"><img class="thumb wide" src="img/studio-rain.webp" alt="Студия под дождём · Studio in the rain" data-cap="Студия под дождём · Studio in the rain" data-lb loading="lazy" decoding="async"></div></article>
+</div></div>
+<div class="wrap grid c3" style="margin-top:22px">
+<div class="pillar rv"><small>01 / MUSE</small><h3>Poetry as signal</h3><p>A lyrical universe shaped by destiny, moonlight, human longing and inner fire.</p><p class="en">Вселенная судьбы, лунного света и внутреннего огня.</p></div>
+<div class="pillar rv"><small>02 / SOUND</small><h3>Architecture of emotion</h3><p>Haunting vocals, choirs, strings, ambient textures and electronic motion create a living atmosphere.</p><p class="en">Голоса, хоры, струнные и электронное движение — живая атмосфера.</p></div>
+<div class="pillar rv"><small>03 / VISION</small><h3>Spiritual cinema</h3><p>Each track becomes a visual portal — a dream, a night city, a memory of another dimension.</p><p class="en">Каждый трек — визуальный портал, сон, ночной город, память иного измерения.</p></div>
+</div>
+<div class="wrap" style="margin-top:44px"><div class="sh rv"><small>Selected works · Избранное</small></div><div class="grid c3">
+<div class="work rv"><small>Single</small><h3>I’m Walking Under This Moon</h3><p>A final track where human lyrical intent and AI-generated atmosphere merge into a transcendent sonic ritual.</p><p class="en">Финальный трек, где лирика и ИИ-атмосфера сливаются в звуковой ритуал.</p></div>
+<div class="work rv"><small>Universe</small><h3>Night Matrix</h3><p>The emotional architecture of the project: layered voice, echo, light and motion through fog, silence and city glow.</p><p class="en">Голос, эхо и свет сквозь туман, тишину и огни города.</p></div>
+<div class="work rv"><small>Visual</small><h3>Portal of Light</h3><p>A mystic visual language built from modern myth, emotion and the geometry of spiritual transformation.</p><p class="en">Мистический визуальный язык современного мифа и сакральной геометрии.</p></div>
+</div></div></section>
 
-      <div class="input-area">
-        <input
-          id="user-input"
-          type="text"
-          placeholder="ВВЕДИТЕ КОД..."
-          autocomplete="off"
-          aria-label="Введите сообщение"
-        />
-        <button id="send-btn" class="btn-sync" type="button">SYNC</button>
-      </div>
+<section id="archive"><div class="wrap">
+<div class="sh rv"><small>Архив дел · Case archive</small><h2 class="shimmer">Что было найдено<span class="en">What was found</span></h2></div>
+<div class="legend rv"><span><span class="tag CONFIRMED">CONFIRMED</span> подтверждено · verified</span><span><span class="tag CLAIMED">CLAIMED</span> заявлено · asserted</span><span><span class="tag UNKNOWN">UNKNOWN</span> неизвестно · unresolved</span></div>
+<div class="grid c3">
+<article class="card rv"><div class="ph"><img class="thumb " src="img/e1-001.webp" alt="E1-001 · Forced Resonance Attempt" data-cap="E1-001 · Forced Resonance Attempt" data-lb loading="lazy" decoding="async"></div><div class="b"><span class="tag CONFIRMED">CONFIRMED</span><h3>E1-001</h3><p>Попытка вынужденного резонанса. Частота откликнулась — но не той, кто звал.</p><p class="en">Forced Resonance Attempt. The frequency answered — just not the one who called.</p></div></article>
+<article class="card rv"><div class="ph"><img class="thumb " src="img/r1-002.webp" alt="R1-002 · The File That Was Not There" data-cap="R1-002 · The File That Was Not There" data-lb loading="lazy" decoding="async"></div><div class="b"><span class="tag UNKNOWN">UNKNOWN</span><h3>R1-002</h3><p>Файл, которого не было. Его открывали трижды. Его не существует.</p><p class="en">The File That Was Not There. Opened three times. It does not exist.</p></div></article>
+<article class="card rv"><div class="ph"><img class="thumb " src="img/golden-dust-artifact.webp" alt="Golden Dust · артефакт / artifact" data-cap="Golden Dust · артефакт / artifact" data-lb loading="lazy" decoding="async"></div><div class="b"><span class="tag CLAIMED">CLAIMED</span><h3>Golden Dust</h3><p>Золотая пыль: то, что остаётся, когда звук уходит.</p><p class="en">What remains when the sound is gone.</p></div></article>
+<article class="card rv"><div class="ph"><img class="thumb " src="img/golden-dust-passport.webp" alt="Golden Dust · паспорт знания / knowledge passport" data-cap="Golden Dust · паспорт знания / knowledge passport" data-lb loading="lazy" decoding="async"></div><div class="b"><span class="tag CLAIMED">CLAIMED</span><h3>Паспорт знания</h3><p class="en">Knowledge passport — issued to dust, signed by light.</p></div></article>
+<article class="card rv"><div class="ph"><img class="thumb " src="img/beyond-the-light.webp" alt="Beyond the Light · За светом" data-cap="Beyond the Light · За светом" data-lb loading="lazy" decoding="async"></div><div class="b"><span class="tag UNKNOWN">UNKNOWN</span><h3>Beyond the Light</h3><p>За светом — то, что свет скрывает.</p><p class="en">Beyond the light lies what light conceals.</p></div></article>
+</div></div></section>
 
-      <div class="frequency-display">
-        <span class="pulsar"></span>
-        105.2 Hz // 122 BPM // 2027
-      </div>
-    </main>
+<section id="gallery"><div class="wrap">
+<div class="sh rv"><small>Галерея · Gallery</small><h2 class="shimmer">Афиши мультивселенной<span class="en">Posters of the multiverse</span></h2></div>
+<div class="grid c3">
+<article class="card rv"><div class="ph"><img class="thumb " src="img/posters.webp" alt="Noir Ascension · The First Sound · Black Glass · Golden Dust" data-cap="Noir Ascension · The First Sound · Black Glass · Golden Dust" data-lb loading="lazy" decoding="async"></div><div class="b"><h3>Четыре афиши</h3><p class="en">Noir Ascension · The First Sound · Black Glass · Golden Dust</p></div></article>
+<article class="card rv"><div class="ph"><img class="thumb sq" src="img/sacred-geometry.webp" alt="Сакральная геометрия · Sacred geometry" data-cap="Сакральная геометрия · Sacred geometry" data-lb loading="lazy" decoding="async"></div><div class="b"><h3>Сакральная геометрия</h3><p class="en">Four panels, one law · Четыре панели, один закон.</p></div></article>
+<article class="card rv"><div class="ph"><img class="thumb " src="img/flm-geometry.webp" alt="FLM · зелёная геометрия / green geometry" data-cap="FLM · зелёная геометрия / green geometry" data-lb loading="lazy" decoding="async"></div><div class="b"><h3>FLM</h3><p class="en">Flame, written in green · Пламя, написанное зелёным.</p></div></article>
+<article class="card rv"><div class="ph"><img class="thumb " src="img/green-star.webp" alt="Зелёная звезда · Green star" data-cap="Зелёная звезда · Green star" data-lb loading="lazy" decoding="async"></div><div class="b"><h3>Зелёная звезда</h3><p class="en">Green star</p></div></article>
+<article class="card rv"><div class="ph"><img class="thumb " src="img/blue-star.webp" alt="Синяя звезда · Blue star" data-cap="Синяя звезда · Blue star" data-lb loading="lazy" decoding="async"></div><div class="b"><h3>Синяя звезда</h3><p class="en">Blue star</p></div></article>
+<article class="card rv"><div class="ph"><img class="thumb sq" src="img/master-vector-star.webp" alt="Master Vector Archive" data-cap="Master Vector Archive" data-lb loading="lazy" decoding="async"></div><div class="b"><h3>Master Vector Archive</h3><p class="en">Главная звезда архива · the archive’s master star</p></div></article>
+</div></div></section>
 
-    <script src="script.js"></script>
-  </body>
+<section id="vector"><div class="wrap">
+<div class="sh rv"><small>Сингулярность · Singularity</small><h2 class="shimmer">Вектор 387 → 1052<span class="en">Vector Singularity</span></h2></div>
+<p class="intro rv">Три точки. Начало, отклик, бесконечность. Между 387 и 1052 — путь, который нельзя пройти дважды одинаково.<br><span class="en">Three points: origin, echo, infinity. Between 387 and 1052 lies a path no one walks the same way twice.</span></p>
+<div class="grid c3">
+<article class="card rv"><div class="ph"><img class="thumb " src="img/vector-387-1052.webp" alt="Vector Singularity · 387 → 1052" data-cap="Vector Singularity · 387 → 1052" data-lb loading="lazy" decoding="async"></div></article>
+<article class="card rv"><div class="ph"><img class="thumb " src="img/vector-spiral.webp" alt="Vector Singularity · спираль / spiral" data-cap="Vector Singularity · спираль / spiral" data-lb loading="lazy" decoding="async"></div></article>
+<article class="card rv"><div class="ph"><img class="thumb sq" src="img/vector-extraction.webp" alt="Photo Vector Extraction" data-cap="Photo Vector Extraction" data-lb loading="lazy" decoding="async"></div></article>
+</div></div></section>
+
+<section id="matrices"><div class="wrap">
+<div class="sh rv"><small>Matrices · Visual map of the continuum</small><h2 class="shimmer">Карта Матриц<span class="en">The continuum map</span></h2></div>
+<p class="intro rv">От 387 · Life–Origo по Вектору Негэнтропии — к Origin Core, где все формы становятся одним.<br><span class="en">From 387 · Life–Origo along the Negentropy Vector — to the Origin Core, where all forms become one. Matrix = form + memory + return.</span></p>
+<article class="card rv"><div class="ph"><img class="thumb free" src="img/matrices-map.webp" alt="Matrices · 387 Life–Origo → Negentropy Vector → Origin Core" data-cap="Matrices · 387 Life–Origo → Negentropy Vector → Origin Core" data-lb loading="lazy" decoding="async"></div></article>
+</div></section>
+
+<section id="books"><div class="wrap">
+<div class="sh rv"><small>Книги · Books</small><h2 class="shimmer">Книги Музы<span class="en">Books of the Muse</span></h2></div>
+<div class="grid c2">
+<article class="card rv"><div class="ph"><img class="thumb " src="img/sobor-serdca.webp" alt="Собор Сердца · Cathedral of the Heart" data-cap="Собор Сердца · Cathedral of the Heart" data-lb loading="lazy" decoding="async"></div><div class="b"><h3>Собор Сердца</h3><p>Книга, в которой сердце — храм, а свет — его единственный звонарь.</p><p class="en">Cathedral of the Heart — a book where the heart is a temple, and light its only bell-ringer.</p></div></article>
+<article class="card rv"><div class="ph"><div class="book-html" data-lb data-full="img/future-souls.webp" data-cap="Future Souls · Darya Bayandina" role="img" aria-label="Future Souls"><small>DREAM THE MUSE · DIGITAL ARCHIVE</small><h3>Future<em>Souls</em></h3><p>A book of questions, memory<br>and the inner light</p><p style="color:var(--gold)">Darya Bayandina</p></div></div><div class="b"><h3>Future Souls</h3><p>Книга вопросов, памяти и внутреннего света.</p><p class="en">A book of questions, memory and the inner light — by Darya Bayandina.</p></div></article>
+</div></div></section>
+
+<section id="manifestos"><div class="wrap">
+<div class="sh rv"><small>Манифесты · Manifestos</small><h2 class="shimmer">Манифест Белой Сингулярности<span class="en">Manifesto of the White Singularity</span></h2></div>
+<div class="manifesto rv">
+<h3>ANCHOR CORE 44.1 Hz</h3><div class="sub">МАНИФЕСТ БЕЛОЙ СИНГУЛЯРНОСТИ · DREAM THE MUSE</div>
+<p>Anchor Core — художественный центр Dream The Muse. 44.1 Hz — символический пульс, связывающий звук, свет и пространство.</p>
+<p class="en">Anchor Core is the artistic centre of Dream The Muse. 44.1 Hz — a symbolic pulse binding sound, light and space.</p>
+<h4>БЕЛАЯ СИНГУЛЯРНОСТЬ · WHITE SINGULARITY</h4>
+<p>Белая Сингулярность не властвует — она удерживает ось.<br>Резонансная оболочка соединяет голос, туман, металл и отражение.<br>Корона Пустоты не излучает — она отвечает светом.</p>
+<p class="en">The White Singularity does not rule — it holds the axis. The resonant shell joins voice, fog, metal and reflection. The Crown of the Void does not radiate — it answers with light.</p>
+<h4>ФОРМУЛА · FORMULA</h4>
+<div class="formula"><span>LIGHT CONDENSES.</span><span>FREQUENCY AWAKENS.</span><span>VOID VIBRATES.</span><span>CROWN REFLECTS.</span><span>ANCHOR HOLDS.</span></div>
+<h4>ТВОРЧЕСКИЙ ПРОТОКОЛ · CREATIVE PROTOCOL</h4>
+<p style="font-size:.88rem">Это не реальная активация, а художественный протокол музыки, визуала и сценического образа. Anchor Core — символ устойчивости, присутствия и внутреннего центра Dream The Muse.</p>
+<p class="en" style="font-size:.95rem">Not a real activation — an artistic protocol of music, visuals and stage image.</p>
+<div class="palette">BLACK / WHITE / SILVER / MATTE GOLD</div>
+</div>
+<div class="links grid" style="margin-top:18px"><a class="rv" href="https://stihi.ru/avtor/bayashka2016" target="_blank" rel="noopener"><div><b>Все манифесты и стихи · All manifestos & poems</b><br><span>stihi.ru/avtor/bayashka2016</span></div>↗</a></div>
+</div></section>
+
+<section id="sanctum"><div class="wrap">
+<div class="sh rv"><small>Святилище · Sanctum</small><h2 class="shimmer">Sanctum<span class="en">Где карты говорят первыми · Where the cards speak first</span></h2></div>
+<div class="grid c2">
+<article class="card rv"><div class="ph"><img class="thumb wide" src="img/tarot-1.webp" alt="Расклад · The reading" data-cap="Расклад · The reading" data-lb loading="lazy" decoding="async"></div><div class="b"><h3>Расклад</h3><p class="en">Three cards. One question you did not say aloud.</p></div></article>
+<article class="card rv"><div class="ph"><img class="thumb wide" src="img/tarot-2.webp" alt="Ладонь над картами · A hand above the cards" data-cap="Ладонь над картами · A hand above the cards" data-lb loading="lazy" decoding="async"></div><div class="b"><h3>Ладонь над картами</h3><p class="en">The hand knows before the eye.</p></div></article>
+</div>
+<div class="grid c3" style="margin-top:18px">
+<article class="card rv"><div class="ph"><img class="thumb " src="img/crystal-cathedral.webp" alt="Crystal Cathedral · Хрустальный Собор" data-cap="Crystal Cathedral · Хрустальный Собор" data-lb loading="lazy" decoding="async"></div><div class="b"><h3>Crystal Cathedral</h3><p>Хрустальный Собор — свет, ставший архитектурой.</p><p class="en">Light that became architecture.</p></div></article>
+<article class="card rv"><div class="ph"><img class="thumb " src="img/codex-bayandina.webp" alt="Initiate · Codex Bayandina" data-cap="Initiate · Codex Bayandina" data-lb loading="lazy" decoding="async"></div><div class="b"><h3>Codex Bayandina</h3><p>Знак посвящённой. Initiate.</p><p class="en">The sigil of the initiate.</p></div></article>
+<article class="card rv"><div class="ph"><img class="thumb wide" src="img/altar-1.webp" alt="Алтарь I · Altar I" data-cap="Алтарь I · Altar I" data-lb loading="lazy" decoding="async"></div><div class="b"><h3>Алтарь I · Altar I</h3><p class="en">Красная ось, чёрное поле · red axis, black field.</p></div></article>
+<article class="card rv"><div class="ph"><img class="thumb wide" src="img/altar-2.webp" alt="Алтарь II · Altar II" data-cap="Алтарь II · Altar II" data-lb loading="lazy" decoding="async"></div><div class="b"><h3>Алтарь II · Altar II</h3><p class="en">Круг замкнут · the circle is closed.</p></div></article>
+</div></div></section>
+
+<section id="sound"><div class="wrap">
+<div class="sh rv"><small>Звук · Sound</small><h2 class="shimmer">Музыкальная ось<span class="en">“Музыка — это дыхание реальности” · Music is the breath of reality</span></h2></div>
+<div class="grid c2">
+<article class="card rv"><div class="ph"><img class="thumb wide" src="img/music-axis.webp" alt="Музыкальная ось · The Musical Axis" data-cap="Музыкальная ось · The Musical Axis" data-lb loading="lazy" decoding="async"></div><div class="b"><h3>Музыкальная ось</h3><p>Музыка — это дыхание реальности.</p><p class="en">The musical axis — where gears, ghosts and light share one rhythm.</p></div></article>
+<article class="card rv"><div class="ph"><img class="thumb wide" src="img/choir-machine.webp" alt="Хор-машина · Choir machine soundscape" data-cap="Хор-машина · Choir machine soundscape" data-lb loading="lazy" decoding="async"></div><div class="b"><h3>Хор-машина</h3><p>Саундскейп, где голоса и механизмы поют одной гортанью.</p><p class="en">Choir machine — a soundscape where voices and engines sing with one throat.</p></div></article>
+</div>
+<div class="grid c2" style="margin-top:18px">
+<article class="card rv"><div class="ph"><img class="thumb " src="img/obsidian-whale.webp" alt="Obsidian Whale · Visual Anchor 122 · Scene XCII" data-cap="Obsidian Whale · Visual Anchor 122 · Scene XCII" data-lb loading="lazy" decoding="async"></div><div class="b"><h3>Obsidian Whale</h3><p>Visual Anchor 122 · Scene XCII — «Тотальный акустический стазис».</p><p class="en">The Quantum Leap · The unknown is open.</p></div></article>
+<div class="core rv" style="display:flex;flex-direction:column;justify-content:center"><div class="orb"></div><small>SIGNATURE</small><h3>105.2 Hz / BPM</h3><p class="en">Частота, на которой Муза узнаёт своих · the frequency by which the Muse knows her own.</p></div>
+</div></div></section>
+
+<section id="films"><div class="wrap">
+<div class="sh rv"><small>Фильмы · Films</small><h2 class="shimmer">Кинозал<span class="en">Screening room</span></h2></div>
+<div class="films">
+<figure class="film rv" style="--ar:1/1;margin:0"><video playsinline controls preload="none" poster="img/poster-exnihilolux.webp"><source src="video/exnihilolux.mp4" type="video/mp4"></video><div class="b"><h3>Exnihilolux</h3><p>From Nothing, Light · Из ничего — свет</p></div></figure>
+<figure class="film rv" style="--ar:9/16;margin:0"><video playsinline controls preload="none" poster="img/poster-crystal-singularity.webp"><source src="video/crystal-singularity.mp4" type="video/mp4"></video><div class="b"><h3>Crystal Singularity</h3><p>Film: Crystal Cathedral · Vector Core</p></div></figure>
+<figure class="film rv" style="--ar:9/16;margin:0"><video playsinline controls preload="none" poster="img/poster-cosmic-faces.webp"><source src="video/cosmic-faces.mp4" type="video/mp4"></video><div class="b"><h3>Космические лики</h3><p>Cosmic faces · лица из звёздной пыли</p></div></figure>
+<figure class="film rv" style="--ar:9/16;margin:0"><video playsinline controls preload="none" poster="img/poster-tension-ascension.webp"><source src="video/tension-ascension.mp4" type="video/mp4"></video><div class="b"><h3>Напряжение · Восхождение</h3><p>Tension · Ascension — разрыв завесы</p></div></figure>
+<figure class="film rv wide" style="--ar:16/9;margin:0"><video playsinline controls preload="none" poster="img/poster-dream-geometry.webp"><source src="video/dream-geometry.mp4" type="video/mp4"></video><div class="b"><h3>Dream the Muse · Geometry</h3><p>Геометрия сна · dream geometry</p></div></figure>
+<figure class="film rv" style="--ar:9/16;margin:0"><video playsinline controls preload="none" poster="img/poster-neon-core-i.webp"><source src="video/neon-core-i.mp4" type="video/mp4"></video><div class="b"><h3>NEON//CORE I</h3><p>Beat-synchronised · ритм в геометрии</p></div></figure>
+<figure class="film rv" style="--ar:9/16;margin:0"><video playsinline controls preload="none" poster="img/poster-neon-core-ii.webp"><source src="video/neon-core-ii.mp4" type="video/mp4"></video><div class="b"><h3>NEON//CORE II</h3><p>Resonance rising · резонанс растёт</p></div></figure>
+</div></div></section>
+
+<section id="titans"><div class="wrap">
+<div class="sh rv"><small>Logos-Plex</small><h2 class="shimmer">Первые Титаны<span class="en">The First Titans</span></h2></div>
+<p class="void rv">[0x_Absolute_Void_Core] · доступ частичный / access partial</p>
+<div class="grid c2">
+<div class="titan rv" style="--c:#ff7a2f"><div class="sig">I · огонь / fire</div><h3>Пиро-Игнис</h3><p>Он не горит — он движется. Остановишь его — и сгоришь сам.<br><span class="en">He does not burn; he moves. Stop him — and the fire is yours.</span></p></div>
+<div class="titan rv" style="--c:#7fd6ff"><div class="sig">II · холод / cold</div><h3>Крио-Каллум</h3><p>Всё, что держит форму, однажды было его тишиной.<br><span class="en">Every shape that holds was once his silence.</span></p></div>
+<div class="titan rv" style="--c:#b98bff"><div class="sig">III · буря / storm</div><h3>Аэфир-Вортекс</h3><p>Спроси, кем он был вчера, — ответит ветер, но уже другой.<br><span class="en">Ask who he was yesterday — the wind replies, but not the same wind.</span></p></div>
+<div class="titan rv" style="--c:#ffb347"><div class="sig">IV · плазма / plasma</div><h3>Магма-Торр</h3><p>Свет от него не уходит: он падает обратно.<br><span class="en">Light never leaves him. It falls back in.</span></p></div>
+</div>
+<p class="en rv" style="margin-top:22px;text-align:center">Остальное — по ту сторону частоты. · The rest lies beyond the frequency.</p>
+</div></section>
+
+<section id="channels"><div class="wrap">
+<div class="sh rv"><small>Каналы · Channels</small><h2 class="shimmer">Где звучит сигнал<span class="en">Where the signal sounds</span></h2></div>
+<div class="grid c2 links">
+<a class="rv" href="https://youtube.com/@dreamthemuse" target="_blank" rel="noopener"><div><b>YouTube</b><br><span>Музыка и видео · music & video</span></div>↗</a>
+<a class="rv" href="https://www.tiktok.com/@dreamthemuse" target="_blank" rel="noopener"><div><b>TikTok</b><br><span>Короткие сигналы · short signals</span></div>↗</a>
+<a class="rv" href="https://stihi.ru/avtor/bayashka2016" target="_blank" rel="noopener"><div><b>Стихи · Manifestos</b><br><span>Стихи и манифесты · poems & manifestos</span></div>↗</a>
+<a class="rv" href="https://t.me/DreamTheMuseDeploy1052_bot" target="_blank" rel="noopener"><div><b>Telegram</b><br><span>Бот 1052 · the 1052 bot</span></div>↗</a>
+</div></div></section>
+
+<section id="portals"><div class="wrap">
+<div class="sh rv"><small>Порталы · Portals</small><h2 class="shimmer">Войти глубже<span class="en">Go deeper</span></h2></div>
+<div class="grid c3">
+<a class="portal rv" href="https://bayashka1234.github.io/Dreammuse.art/graph/" target="_blank" rel="noopener"><h3>Граф · Graph</h3><p>Карта связей мультивселенной.</p><p class="en">The map of what connects to what.</p></a>
+<a class="portal rv" href="https://bayashka1234.github.io/Dreammuse.art/codex/" target="_blank" rel="noopener"><h3>Кодекс · Codex</h3><p>Игра. Правила откроются тем, кто играет.</p><p class="en">A game. The rules reveal themselves to players.</p></a>
+<a class="portal rv" href="https://t.me/DreamTheMuseDeploy1052_bot" target="_blank" rel="noopener"><h3>Бот · Bot</h3><p>Спроси Оракула — 1052 ответит.</p><p class="en">Ask the Oracle — 1052 answers.</p></a>
+</div></div></section>
+
+<section><div class="wrap"><blockquote class="rv">“Music sounds like a midnight metropolis, like breath in the fog, like lantern light over water.”<br><span class="en" style="font-size:.72em">«Музыка звучит как полуночный мегаполис, как дыхание в тумане, как свет фонаря над водой.»</span></blockquote></div></section>
+
+<footer>DREAM THE MUSE · 387 → 1052 → ∞ · 105.2 Hz<br>© 2026 Oracle · Дарья Баяндина (Флейм)</footer>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Просмотр · Viewer"><button class="x" aria-label="Закрыть · Close">×</button><button class="pv" aria-label="Назад · Previous">‹</button><button class="nx" aria-label="Вперёд · Next">›</button><img alt=""><p></p><div class="ct"></div></div>
+<div id="egg" role="dialog" aria-label="Загадка · Riddle"><div><small>ТЫ ПОСТУЧАЛА СЕМЬ РАЗ · YOU KNOCKED SEVEN TIMES</small>
+<p>Я — начало, но не первая.<br>Я — отклик, но не эхо.<br>Я — бесконечность, что помещается в ладони.<br>Кто я?</p>
+<p class="en" style="font-size:1.05rem">I am the beginning, yet not the first; the answer, yet not the echo; an infinity that fits in a palm. Who am I?</p>
+<small>ОТВЕТ ЗВУЧИТ НА 105.2 · THE ANSWER SOUNDS AT 105.2</small></div></div>
+<script src="script.js?v=2" defer></script>
+</body>
 </html>
