@@ -171,3 +171,12 @@ footer{padding:40px 0 calc(50px + env(safe-area-inset-bottom));text-align:center
 #tracks li.on b{color:var(--amber)}#tracks li.on .n{color:var(--gold)}
 #tracks button:hover b{color:var(--amber)}
 .p-note{font-size:.72rem;color:var(--muted);margin-top:14px}
+#pstatus{min-height:1.2em;margin:10px 0 0;font-size:.78rem;color:var(--muted)}
+#pstatus.err{color:#ffb4a8}
+#player.native #au{display:block;width:100%;margin-top:10px}
+#au{display:none}
+#tracks li{display:flex;align-items:center;border-bottom:1px solid var(--line)}
+#tracks li button{flex:1;border-bottom:0}
+#tracks .f{flex:none;font-size:.6rem;letter-spacing:.14em;color:var(--muted);padding:8px 6px;border:1px solid var(--line);border-radius:99px;margin-left:6px}
+#tracks .f:hover{color:var(--gold)}
+#pfile{color:var(--gold);text-decoration:underline;text-underline-offset:3px}
