@@ -180,3 +180,17 @@ footer{padding:40px 0 calc(50px + env(safe-area-inset-bottom));text-align:center
 #tracks .f{flex:none;font-size:.6rem;letter-spacing:.14em;color:var(--muted);padding:8px 6px;border:1px solid var(--line);border-radius:99px;margin-left:6px}
 #tracks .f:hover{color:var(--gold)}
 #pfile{color:var(--gold);text-decoration:underline;text-underline-offset:3px}
+
+/* sanctum manifesto */
+.sacrum{position:relative;margin:10px 0 34px;padding:44px 26px 38px;border:1px solid var(--line);border-radius:var(--r);background:radial-gradient(ellipse at 50% 0,rgba(233,194,122,.13),transparent 65%),#000;text-align:center;overflow:hidden}
+.sacrum:before{content:"";position:absolute;inset:10px;border:1px solid rgba(233,194,122,.1);border-radius:calc(var(--r) - 6px);pointer-events:none}
+.sm-k{display:block;color:var(--gold);letter-spacing:.3em;font-size:.62rem;opacity:.8}
+.sm-t{font-family:"Cormorant Garamond",serif;font-size:clamp(2rem,6vw,3.4rem);margin:12px 0 30px;letter-spacing:.06em}
+.sm-t .en{display:block;font-size:.4em;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+.sm-l{max-width:720px;margin:0 auto;display:grid;gap:30px}
+.sm-i h3{font-family:"Cormorant Garamond",serif;color:var(--gold);letter-spacing:.2em;font-size:1.05rem;margin:6px 0 10px}
+.sm-n{font-family:"Cormorant Garamond",serif;color:var(--amber);font-size:1.6rem;text-shadow:0 0 16px rgba(233,194,122,.55);animation:smb 5.2s ease-in-out infinite}
+.sm-i p{color:#f1dfb4;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.18rem;line-height:1.7;text-shadow:0 0 14px rgba(233,194,122,.18)}
+.sm-f{margin-top:34px;font-family:"Cormorant Garamond",serif;letter-spacing:.28em;color:var(--gold);font-size:1rem}.sm-f b{display:block;font-weight:600;color:var(--amber);margin-top:6px;letter-spacing:.18em}
+@keyframes smb{0%,100%{opacity:.7;text-shadow:0 0 8px rgba(233,194,122,.35)}50%{opacity:1;text-shadow:0 0 22px rgba(233,194,122,.8)}}
+@media (prefers-reduced-motion:reduce){.sm-n{animation:none}}
