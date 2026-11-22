@@ -1,12 +1,2 @@
-﻿Set-Location "D:\Dream-the-Muse-"
-Get-Clipboard -Raw | Set-Content "portal_omega.html" -Encoding UTF8
-$idx = Get-Content "index.html" -Raw -Encoding UTF8
-if ($idx -notmatch "omega-vector-bridge") {
-    $btn = '<div id="omega-vector-bridge" style="position:fixed;bottom:18px;right:18px;z-index:9999;"><button onclick="const s=window.getSelection().toString().trim();if(s)localStorage.setItem(''omega_bridge_text'',s);location.href=''portal_omega.html''+(s?''?impulse=''+encodeURIComponent(s.slice(0,200)):'''')" style="background:#080808;color:#e5c158;border:1px solid #e5c158;padding:10px 16px;font-family:monospace;font-size:12px;font-weight:bold;cursor:pointer;">Ω ВЕКТОРНЫЙ ШЛЮЗ ↗</button></div></body>'
-    ($idx -replace '</body>', $btn) | Set-Content "index.html" -Encoding UTF8
-}
-git add index.html portal_omega.html
-git commit -m "Ω-BRIDGE v5.0: единый векторный мост"
-git pull --rebase origin main
-git push origin main
+﻿Get-Clipboard -Raw | Set-Content "portal_omega.html" -Encoding UTF8; git add portal_omega.html; git commit -m "fix: восстановлен полный код portal_omega.html v5.0"; git push origin main
 
